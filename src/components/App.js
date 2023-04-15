@@ -7,12 +7,12 @@ import About from "./About";
 import user from "../data/user";
 console.log(user);
 
-function App() {
+function App(props) {
   return (
     <div>
       <NavBar />
-      <Home />
-      <About />
+      <Home  name="Liza" city="New York" color="firebrick"/>
+      <About bio="I made this!"  github="https://github.com/liza" linkedin="https://www.linkedin.com/in/liza/" />
     </div>
   );
 }
